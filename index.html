@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Music Pag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <script src="https://kit.fontawesome.com/0cb147038e.js" crossorigin="anonymous"></script>
+   
+</head>
+
+
+<body >
+  
+
+  <div class="swiper mySwiper" >
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="caja_img"> 
+         <img src="headphones-gdde8dd2de_1920.jpg" alt="">
+         </div>
+        
+        <div class="name">
+         <h4>Strock Tech</h4>
+         </div>
+
+         <audio src="TRACKS/Strock Tech.wav" controls id="audio1"></audio>
+        
+
+        <div class="player__btn player__btn--medium blue play" id="play1">   
+          <i class="fa fa-play play_btn" aria-hidden="true"></i>
+          <i class="fa fa-pause pause_btn" aria-hidden="true"></i>
+        </div>
+
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="caja_img"> 
+         <img src="headphones-gdde8dd2de_1920.jpg" alt="">
+         </div>
+
+        <div class="name">
+         <h4>Strock Tech2</h4>
+         </div>
+
+         <audio src="TRACKS/Strock Tech2.wav" controls id="audio2"></audio>
+
+         <div class="player__btn player__btn--medium blue play" id="play2">   
+           <i class="fa fa-play play_btn" aria-hidden="true"></i>
+           <i class="fa fa-pause pause_btn" aria-hidden="true"></i>
+         </div>
+ 
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="caja_img"> 
+         <img src="headphones-gdde8dd2de_1920.jpg" alt="">
+         </div>
+
+        <div class="name">
+         <h4>Strock Tech2</h4>
+         </div>
+
+         <audio src="TRACKS/Strock Tech3.wav" controls id="audio3"></audio>
+
+         <div class="player__btn player__btn--medium blue play" id="play3">   
+           <i class="fa fa-play play_btn" aria-hidden="true"></i>
+           <i class="fa fa-pause pause_btn" aria-hidden="true"></i>
+         </div>
+      </div>  
+
+        <div class="swiper-slide">
+          <div class="caja_img">
+            <img src="headphones-gdde8dd2de_1920.jpg" alt="">
+          </div>
+        
+          <div class="name">
+            <h4>Strock Tech2</h4>
+          </div>
+        
+          <audio src="TRACKS/Strock Tech4.wav" controls id="audio4"></audio>
+        
+          <div class="player__btn player__btn--medium blue play" id="play4">
+            <i class="fa fa-play play_btn" aria-hidden="true"></i>
+            <i class="fa fa-pause pause_btn" aria-hidden="true"></i>
+          </div>
+        </div>
+  </div>
+  
+  <div class="swiper-pagination"></div>
+  <div class="volumen">
+  <input type="range" max="1" min="0" step="0.1" id="volumen" class="range_volumen">
+</div>
+    <script src="main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    }
+  });
+</script>
+
+</body>
+</html>
